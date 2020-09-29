@@ -1,21 +1,18 @@
-export default function AppLayout ({children}) {
+import styles, {globalStyles} from './styles';
+
+export default function AppLayout({ children }) {
   return (
     <>
-      <main>
-        {children}
-      </main>
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: monospace;
-        }
+      <div>
+        <main>
+          {children}
+        </main>
+      </div>
 
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
+      <style jsx>{styles}</style>
+
+      <style jsx global>{globalStyles}</style>
+
     </>
   )
 }
