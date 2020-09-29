@@ -1,0 +1,6 @@
+## Que se Necesita
+node, npm, terminal, git
+
+## Install NextJS
+npx create-next-app twitter_clone
+
